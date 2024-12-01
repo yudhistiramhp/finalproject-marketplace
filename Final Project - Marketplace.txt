@@ -1,0 +1,18 @@
+1.	- required : Validasi ini memastikan agar data yang dikirim tidak boleh kosong.
+	- integer : memastikan agar data berupa bilangan bulat
+	- numeric : Memastikan agar data berupa angka
+	- max:10 : Memastikan agar data tidak melebihi maksimal yang ditentukan (10)
+	- min:8 : Memastikan agar data tidak kurang dari yang ditentukan (8)
+	- url : Memastikan data agar berupa url
+
+2.	- Pertama membuat Tabel User dan Model
+	- Kemudian Membuat Register, Login, logout pada UserController
+	- Menggunakan middleware pada API, kemudian route dari product dimasukan kesana agar bisa dijalakan Ketika sudah login saja
+	- Ketika user login, maka akan mendapatkan token pada endpoint tersebut
+	- Informasi yang disimpan terkait akun pengguna yaitu username, email, password, hash password, remember token, created dan updated dari user
+
+3.	- Pertama harus menentukan endpoint dari API (contoh untuk product => api/products)
+	- Kemudian menambahkan query parameter pada controller untuk search dan sorting, gunakan conditional untuk memisahkan antara search dan sorting
+	- Setelah itu kembalikan hasil berupa json
+	
+	- Memastikan semua operasi CRUD lancar dengan try catch atau error handling agar mengetahui apakah operasi CRUD berjalan atau tidak
